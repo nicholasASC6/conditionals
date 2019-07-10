@@ -106,11 +106,23 @@ if (choice == undefined); {
 
 } else if (choice == 'run' && randomPerson == 'John') {
     console.log("You run, but John, a human officer with an attitude and a heart of gold, finds you...");
-}   if (item == 'hammer' || 'jacket') {
+}   if (item == 'hammer' || item == 'jacket') {
     console.log("...and holds you for questioning for suspicious activity");
     money = 0;
     } else {console.log("...and seeing you have no ill intent, John protects you from the protestors and lets you go.");
-}
+
+} else (choice == 'run' && randomPerson == 'Felipe')
+    if (item == 'paint') {
+        console.log("You boldy protest by painting a pro-android message...");
+        } let message = process.argv[5]
+        if (message != undefined) {
+            console.log(`..."${message.toUpperCase()}""`);
+
+        } else {
+            console.log(`Nothing interesting happens, but at least you got that ${item}`);
+        }
+
+    }
     
 
 
